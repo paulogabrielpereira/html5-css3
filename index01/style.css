@@ -1,0 +1,52 @@
+* {
+    font-family: Cambria;
+}
+
+body {
+    background: url('escudo-corinthians-01.jpeg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+h1 {
+    text-align: center;
+    color: #a00;
+    font-size: 25pt;
+}
+
+hr {
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+div {
+    display: block;
+    position: relative;
+    background-color: rgba(0,0,0,.2);
+    padding: 10px;
+    margin: 10px;
+    width: 32.5vw;
+    height: 55vh;
+}
+
+div p {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #000;
+}
+
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 600;
+    color: #500;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+}
