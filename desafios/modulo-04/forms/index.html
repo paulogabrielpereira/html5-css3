@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        label {
+            cursor: auto;
+        }
+
+        section > h1 {
+            font-family: Cambria, Cochin, Georgia, serif;
+            text-align: center;
+            color: #414141;
+        }
+
+        section {
+            border: 3px dashed #797979;
+            margin: 10px;
+            padding: 10px;
+            width: 50vh;
+        }
+
+        form > div {
+            padding: 2px 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="login">
+        <h1>Login</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div>
+                <label for="iuser">Usuário: </label>
+                <input type="text" name="user" id="iuser" required minlength="3" maxlength="30"  placeholder="Digite o nome do usuário..." autocomplete="username">
+            </div>
+            <div>
+                <label for="ipass">Senha: </label>
+                <input type="password" name="pass" id="ipass" required minlength="8" maxlength="20" placeholder="Digite sua senha..." autocomplete="current-password">
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </section>
+
+    <section id="prova">
+        <h1>Pedido de revisão de avaliação</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <div>
+                <label for="ialuno">Aluno(a): </label>
+                <input type="text" name="aluno" id="ialuno" required minlength="3" maxlength="30" size="25" placeholder="Digite o nome do(a) aluno(a)..." autocomplete="name">
+            </div>
+            <div>
+                <label for="imedia">Nota: </label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" value="5">
+            </div>
+            <div>
+                <label for="imes">Período letivo: </label>
+                <input type="month" name="mes" id="imes" required value="2024-04">
+            </div>
+            <div>
+                <label for="idata">Dia da prova: </label>
+                <input type="date" name="data" id="idata" value="2024-04-25">
+            </div>
+            <div>
+                <label for="ihora">Horário da prova: </label>
+                <input type="time" name="hora" id="ihora" value="19:30">
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
