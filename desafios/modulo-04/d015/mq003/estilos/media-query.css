@@ -1,0 +1,68 @@
+/* Estilos para os demais formatos de tela */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 1px 1px 6px black;
+    }
+    h1 {
+        color: black;
+        text-shadow: none;
+        font-size: 1.1em;
+    }
+    footer {
+        display: block;
+        font-size: 0.7em;
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background-image: url('../../imagens/back-tablet.jpg');
+    }
+    main {
+        width: 80vw;
+    }
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width:992px) {
+    body {
+        background-image: url('../../imagens/back-pc.jpg');
+    }
+    main {
+        width: 70vw;
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url('../../imagens/back-tv.jpg');
+    }
+    main {
+        width: 60vw;
+    }
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
