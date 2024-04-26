@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 , menu {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+menu {
+    margin-bottom: 20px;
+}
+
+menu > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+}
+
+menu li {
+    margin: 5px 5px 0 0;
+    padding: 3px;
+}
+
+menu li:hover {
+    background-color: #323232;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline dashed;
+}
+
+p {
+    text-indent: 30px;
+    padding : 10px;
+    text-align: justify;
+}
