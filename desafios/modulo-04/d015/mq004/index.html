@@ -6,11 +6,13 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
         <h1>Site responsivo feito em HTML 5 e CSS 3</h1>
-        <menu>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="menu">
             <ul>
                 <li><a href="https://paulogabrielpereira.github.io/projeto-android/" target="_blank">Projeto Android</a></li>
                 <li><a href="https://paulogabrielpereira.github.io/projeto-social/" target="_blank">Projeto Redes Sociais</a></li>
@@ -25,7 +27,20 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias deserunt natus doloremque illum cum sit quo? Quam, nam animi ipsum quos tempora eius pariatur culpa asperiores officia quis molestias. Exercitationem quo nam provident! Placeat, qui ut doloremque soluta dolore voluptate vel dicta dolor quasi laudantium. Quia officiis quod dolores perferendis at nobis repellendus quae unde vel ad, est sunt!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eos fugiat pariatur, aliquam unde rerum ipsa ullam incidunt hic iure est totam ratione laborum dicta, laudantium maiores, sunt consequatur cupiditate. Repudiandae, nemo quam iure numquam beatae quibusdam vitae ex odio, nobis at laboriosam delectus atque maxime odit voluptatibus quod quia quas illo distinctio! Laboriosam, deserunt eaque at ullam numquam consequatur.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto at numquam eum amet quaerat, pariatur quas consectetur voluptates! Deserunt autem dolore eius iusto ab suscipit quas laboriosam perspiciatis laudantium. Maxime, porro. Quis, minima odio. Ea doloremque earum tempora dolorum soluta adipisci enim velit veniam, error quis aliquid necessitatibus perferendis, quibusdam ex blanditiis. Officiis, illo culpa fuga eum necessitatibus accusamus?</p>
+            <h2>Mobile First</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias deserunt natus doloremque illum cum sit quo? Quam, nam animi ipsum quos tempora eius pariatur culpa asperiores officia quis molestias. Exercitationem quo nam provident! Placeat, qui ut doloremque soluta dolore voluptate vel dicta dolor quasi laudantium. Quia officiis quod dolores perferendis at nobis repellendus quae unde vel ad, est sunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eos fugiat pariatur, aliquam unde rerum ipsa ullam incidunt hic iure est totam ratione laborum dicta, laudantium maiores, sunt consequatur cupiditate. Repudiandae, nemo quam iure numquam beatae quibusdam vitae ex odio, nobis at laboriosam delectus atque maxime odit voluptatibus quod quia quas illo distinctio! Laboriosam, deserunt eaque at ullam numquam consequatur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto at numquam eum amet quaerat, pariatur quas consectetur voluptates! Deserunt autem dolore eius iusto ab suscipit quas laboriosam perspiciatis laudantium. Maxime, porro. Quis, minima odio. Ea doloremque earum tempora dolorum soluta adipisci enim velit veniam, error quis aliquid necessitatibus perferendis, quibusdam ex blanditiis. Officiis, illo culpa fuga eum necessitatibus accusamus?</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
