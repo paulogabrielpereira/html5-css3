@@ -13,6 +13,7 @@
 
     #login {
         width: 80vw;
+        height: 320px;
     }
 
     #login > #imagem {
@@ -24,6 +25,10 @@
     #login > #formulario {
         float: right;
         width: 70%;
+    }
+
+    form input[type=submit] {
+        margin-top: 20px;
     }
 
     body, html {
@@ -38,6 +43,7 @@
 @media screen and (min-width: 992px) {
     #login {
         width: 950px;
+        height: 420px;
     }
 
     #login > #imagem {
@@ -57,5 +63,9 @@
     #formulario > h1 {
         font-size: 2.5em;
         margin-bottom: 10px;
+    }
+
+    form input[type=submit] {
+        margin-top: 80px;
     }
 }
