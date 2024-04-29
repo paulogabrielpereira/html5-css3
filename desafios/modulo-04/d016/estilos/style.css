@@ -1,5 +1,83 @@
 :root {
-    --verde: #49a09d;
-    --lilas: #5f2c82;
+    --cor-1: #3F76DB;
+    --cor-2: #DBAA40;
     --fonte-padrao: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-padrao);
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor-1);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#login > #imagem {
+    background: var(--cor-1) url('../login.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+#login > #formulario {
+    padding: 10px;
+}
+
+form input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+    border: none;
+    background-color: var(--cor-2);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform .1s ease-in;
+}
+
+form input[type=submit]:hover {
+    transform: scale(.97);
+    box-shadow: none;
+}
+
+form a.btn {
+    display: block;
+    text-align: center;
+    color: #836524;
+    border: 1px solid;
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form a.btn:hover {
+    background-color: var(--cor-2);
+    color: white;
+    text-decoration: 2px underline;
+}
+
+form a.btn > i {
+    font-size: 0.8em;
 }
